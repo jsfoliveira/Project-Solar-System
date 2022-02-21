@@ -1,3 +1,97 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-image: url(./images/background.png);
+}
+
+p,
+h1,
+h2 {
+  color: white;
+}
+
+header h1,
+.sistema-solar h2 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  transform: translate(-10%, -10%);
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+  /* Clip Background Image */
+
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  /* Animate Background Image */
+
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    100% {
+      background-position: 100% 50%;
+    }
+
+  }
+}
+
+.sistema-solar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4rem 3rem;
+}
+
+.planeta-cards {
+  width: 50%;
+}
+
+.nome-planeta {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(235, 230, 225, 0.911);
+  margin-top: 180px;
+  margin-left: 180px;
+  width: 130px;
+  height: 36spx;
+  color: rgb(252, 75, 10);
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nome-planeta:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: translate(-10%, -10%);
+}
+
+.linha {
+  border: 8px double rgba(255, 255, 255, .25);
+  width: 32%;
+  margin-left: 580px;
+}
