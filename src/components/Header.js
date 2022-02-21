@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Este componente irá renderizar o título principal da página "Sistema Solar".
 class Header extends React.Component {
   render() {
     return (

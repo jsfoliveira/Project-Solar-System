@@ -3,6 +3,7 @@ import Title from './Title';
 import planetas from '../data/planets';
 import PlanetCard from './PlanetCard';
 
+// O SolarSystem é a seção que vai conter o Title e o PlanetCard (que é um grupo de seções contendo o título e a imagem dos planetas).
 class SolarSystem extends React.Component {
   render() {
     return (
