@@ -95,3 +95,11 @@ header h1 {
   width: 32%;
   margin-left: 580px;
 }
+
+.mission-card {
+  width: 900px;
+}
+
+.container-missions {
+  display: flex;
+}
