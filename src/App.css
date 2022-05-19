@@ -8,7 +8,8 @@ body {
 
 p,
 h1,
-h2 {
+h2,
+h5 {
   color: white;
 }
 
@@ -62,8 +63,8 @@ header h1 {
 
 .sistema-solar {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 4rem 3rem;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  margin: 1rem 1rem;
 }
 
 .planeta-cards {
@@ -97,9 +98,26 @@ header h1 {
 }
 
 .mission-card {
-  width: 900px;
+  border: solid black;
+  background-color: rgba(69, 69, 68, 0.58);
+  padding: 40px;
+  height: 320px;
+  width: 65%;
+  margin-left: 200px;
+}
+
+.mission-card p, h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.mission-card:hover {
+  background-color: rgba(69, 69, 68, 0.333);
+  cursor: pointer;
 }
 
 .container-missions {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
