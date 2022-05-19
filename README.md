@@ -1,4 +1,4 @@
-# 	:woman_technologist: Project Pixels Art
+# 	:woman_technologist: Project Solar System
 
 Esse projeto contém uma série de informações sobre o que eu aprendi aqui na Trybe ao longo do curso de desenvolvimento web da Trybe. <br>
 As habilidades desenvolvidas nesse projeto são:
